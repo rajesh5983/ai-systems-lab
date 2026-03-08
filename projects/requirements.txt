@@ -1,0 +1,11 @@
+jupyter
+ipykernel
+python-dotenv
+pandas
+numpy
+openai
+chromadb
+langchain
+langchain-openai
+pypdf
+tqdm
