@@ -106,3 +106,87 @@ ForgeMind can support this by helping produce:
 ├── 07_governance/
 ├── 08_demos/
 └── assets/
+
+## Langflow artefacts as code
+
+The core implementation of ForgeMind v1 is built in Langflow. For this reason, the exported JSON flow files are treated as the primary code artefacts for the project.
+
+These JSON files capture the logic and structure of the system and can be imported into Langflow for review, extension, or reuse.
+
+---
+
+## Data and knowledge base
+
+ForgeMind v1 currently uses a curated set of technical documents and PDF-based maintenance references as its knowledge base.
+
+The project intentionally began with a smaller document set to:
+
+- keep the prototype focused
+- reduce retrieval noise
+- improve grounding reliability during early experimentation
+- fit within practical context and tooling limits
+
+---
+
+## Safeguards and design considerations
+
+ForgeMind includes early-stage safeguards to reduce the risk of misleading or unsafe outputs.
+
+These include:
+
+- grounding responses on retrieved context
+- validation before final response generation
+- explicit handling for unsupported or out-of-scope queries
+- safety-aware response framing
+
+This project does not replace official maintenance procedures, OEM documentation, or qualified technician judgement.
+
+---
+
+## Current limitations
+
+ForgeMind v1 is a prototype and should be understood within that context.
+
+Current limitations include:
+
+- small document corpus
+- no live integration with ERP, inventory, or order tracking systems
+- no persistent memory across sessions
+- limited personalization by technician role or skill level
+- workflow automation is not yet implemented in v1
+
+These limitations are intentional and create the design space for future versions.
+
+---
+
+## Roadmap
+
+### ForgeMind v1  
+Multi-agent RAG assistant focused on grounded maintenance support  
+
+### ForgeMind v2  
+Workflow-aware AI with simulated actions such as work order creation, parts request generation, webhook-based triggers, and notification flows  
+
+### ForgeMind v3  
+Context-aware and enterprise-ready system with technician context, memory, optimization logic, and broader operational orchestration  
+
+---
+
+## Showcase intent
+
+This repository is structured as a portfolio project to demonstrate:
+
+- applied AI system design
+- multi-agent orchestration thinking
+- retrieval and grounding patterns
+- responsible AI considerations
+- product and architecture maturity beyond a basic chatbot
+
+---
+
+## Author
+
+**Rajesh Prasannakumar**  
+Data and AI practitioner.
+
+This project reflects a focus on designing AI systems that bridge technical capability with real-world operational value.
